@@ -30,6 +30,7 @@
 body {
 	background-color: silver;
 	text-transform: uppercase;
+	opacity: 9.9;
 }
 
 #tb {
@@ -41,7 +42,7 @@ body {
 <body>
 
 	<!-- front-end -->
-	<form action="">
+	<form action="salvarUsuario" method="post" onsubmit="return validarDados()? true : false" >
 		<table id="tb">
 			<tr>
 				<td><label>Nome</label></td>
@@ -65,6 +66,25 @@ body {
 		</table>
 	</form>
 
+	<script type="text/javascript">
+		function validarDados() {
+			var nome = document.getElementById("nome").value;
+			var senha = document.getElementById("senha").value;
+			var login = document.getElementById("login").value;
+
+			if (nome == '') {
+				alert('Informe um nome');
+				return false;
+			} else if (login == '') {
+				alert('Informe o login');
+				return false;
+			}else if (senha == '') {
+				alert('Informe a senha');
+				return false;
+			}
+			return true;
+		}
+	</script>
 
 </body>
 </html>
