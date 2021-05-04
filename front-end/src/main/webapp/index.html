@@ -3,12 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+
+<style type="text/css">
+#btn {
+	width: 210px;
+	color: blue;
+	border-radius: 5px;
+}
+
+#login {
+	width: 200px;
+	border-radius: 5px;
+}
+
+#nome {
+	width: 200px;
+	border-radius: 5px;
+}
+
+#senha {
+	width: 200px;
+	border-radius: 5px;
+}
+
+body {
+	background-color: silver;
+	text-transform: uppercase;
+}
+
+#tb {
+	background-color: gray;
+}
+</style>
+
 </head>
 <body>
 
 	<!-- front-end -->
 	<form action="">
-		<table>
+		<table id="tb">
 			<tr>
 				<td><label>Nome</label></td>
 				<td><input type="text" id="nome" nome="nome"></td>
@@ -25,8 +59,8 @@
 				<td><input type="password" id="senha" name="senha"></td>
 			</tr>
 			<tr>
-				<td/>
-				<td><input type="submit" value="Salvar"></td>
+				<td />
+				<td><input type="submit" id="btn" value="Salvar"></td>
 			</tr>
 		</table>
 	</form>
